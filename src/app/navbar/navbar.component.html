@@ -1,0 +1,53 @@
+<nav class="bg-info">
+    <div class="custom-container">
+        <div class="nav-upper py-3 d-flex justify-content-between align-items-center">
+            <span class="d-flex align-items-center gap-4">
+                <a routerLink="/home" class="cursor-pointer">
+                    <img src="assets/navbar/logoCOP.png" alt="COP16 logo">
+                </a>
+                <img src="assets/navbar/logoUN.png" alt="UN logo">
+            </span>
+            <span class="d-flex align-items-center gap-4">
+                <span class="d-flex align-items-center gap-1">
+                    <img src="assets/navbar/simple-line-icons_calender.svg">
+                    <span class="d-flex flex-column pt-1">
+                        <p class="upper-text">5/20/2024</p>
+                        <p class="lower-text">Riyadh</p>
+                    </span>
+                </span>
+                <span class="d-flex align-items-center gap-1">
+                    <img src="assets/navbar/ri_time-zone-line.svg">
+                    <span class="d-flex flex-column pt-1">
+                        <p class="upper-text">9:22 PM</p>
+                        <p class="lower-text">Time Zone</p>
+                    </span>
+                </span>
+                <span class="d-flex align-items-center gap-1">
+                    <img src="assets/navbar/typcn_weather-sunny.svg">
+                    <span class="d-flex flex-column pt-1">
+                        <p class="upper-text position-relative">35 <span class="degree">o</span></p>
+                        <p class="lower-text">Weather</p>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="nav-bottom py-4 d-flex justify-content-between align-items-center">
+            <ul class="d-flex align-items-center gap-4">
+                <!-- <li class="nav-item selected-nav">About</li> -->
+                <li class="nav-item">About</li>
+                <li class="nav-item">Saudi efforts</li>
+                <li class="nav-item">Way to Riyadh</li>
+                <li class="nav-item">About Saudi Arabia</li>
+                <li class="nav-item">Blue zone</li>
+                <li class="nav-item">Green zone</li>
+                <li class="nav-item">Exhibitors</li>
+            </ul>
+            <button (click)="isArabic = !isArabic" [class.lang-ar]="isArabic" class="btn lang-btn d-flex gap-2 align-items-center">
+                <img src="assets/navbar/Group.svg">
+                <span *ngIf="!isArabic">EN</span>
+                <span *ngIf="isArabic">عربي</span>
+                <img src="assets/navbar/oui_arrow-down.svg">
+            </button>
+        </div>
+    </div>
+</nav>
