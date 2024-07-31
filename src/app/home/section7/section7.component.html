@@ -1,1 +1,57 @@
-<p>section7 works!</p>
+<h1 class="about-header main-padding-inline py-4 pb-5">About Saudi Arabia</h1>
+<section [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">
+    <div class="main-padding-inline main-sec7">
+        <div class="city-header">
+            <h2 class="mb-2">Riyadh</h2>
+            <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud desert, on
+                the
+                eastern part of the Najd plateau</p>
+        </div>
+        <div class="map position-relative">
+            <img src="assets/home/sec7/riyadh-map.png" alt="">
+            <div class="city-carousel d-flex align-items-center gap-4">
+                <div class="city city-selected"  [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">
+                    <span>Riyadh</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/makkah.png'+')'">
+                    <span>Makkah</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/madinah.png'+')'">
+                    <span>Madinah</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/jeddah.png'+')'">
+                    <span>Jeddah</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/al-khobar.png'+')'">
+                    <span>Al Khobar</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/tabuk.png'+')'">
+                    <span>Tabuk</span>
+                </div>
+                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/yanbu.png'+')'">
+                    <span>Yanbu</span>
+                </div>
+            </div>
+        </div>
+        <div class="statistics d-flex justify-content-between gap-4">
+            <div class="stat-item">
+                <h3>Annual rainfall average</h3>
+                <p>Is 89 mm. Southern region receives monsoon rain from Indian ocean</p>
+            </div>
+            <div class="stat-item">
+                <h3>Population of Saudi Arabia</h3>
+                <p>34.2 Milion, 50% of Saudi population under 25 age</p>
+            </div>
+            <div class="stat-item">
+                <h3>Land area</h3>
+                <p>About 2.150.000 km2
+                    830.000 sq mi</p>
+            </div>
+            <div class="stat-item">
+                <h3>Maximum temperature range</h3>
+                <p>Winter ( DEC to FEB ) : 20-30 c
+                    Summer ( JUN to AUG ) : 35-45 c</p>
+            </div>
+        </div>
+    </div>
+</section>
