@@ -1,0 +1,58 @@
+.main-sec2 {
+    background-color: #BF874A;
+}
+
+.motive-item {
+    height: 200px;
+    border-radius: 32px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.motive-item h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.motive-item h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.motive-item h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.motive-item:not(.item3) {
+    cursor: pointer;
+    user-select: none;
+}
+.item1 {
+    opacity: .4;
+    transform: scale(0.5) translateX(90px);
+}
+.item2 {
+    opacity: .7;
+    transform: scale(0.8);
+}
+.item3 {
+    /* opacity: .5;
+    transform: scale(0.7); */
+    box-shadow: 0px 5px 20.3px 0px #FFFFFF80;
+}
+.item4 {
+    opacity: .7;
+    transform: scale(0.8);
+}
+.item5 {
+    opacity: .4;
+    transform: scale(0.5) translateX(-90px);
+}
