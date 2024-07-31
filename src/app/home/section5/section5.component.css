@@ -69,9 +69,10 @@
     color: #3F3F46;
 }
 
-.effort p span {
+.explore-more-btn {
     font-size: 18px;
     font-weight: 700;
     color: #F79E26;
     cursor: pointer;
+    border-bottom: 1px solid #F79E26;
 }
