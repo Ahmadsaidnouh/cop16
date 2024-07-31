@@ -102,7 +102,11 @@
     font-size: 20px;
 }
 .header-bottom {
-
+    backdrop-filter: blur(10px);
+    box-shadow: -5px -5px 250px 0px #FFFFFF05 inset;
+}
+.next-btn {
+    margin-inline-end: -7px;
 }
 .header-bottom p{
     color: white;
@@ -112,6 +116,18 @@
 .header-bottom p span{
     color: #BF874A;
     cursor: pointer;
+}
+
+.msg-container {
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+    bottom: 100px;
+    z-index: 99;
+    width: 74px;
+    height: 74px;
+    border-radius: 5px;
+    background: linear-gradient(#2C4A4A, #39B262);
 }
 
 @media (min-aspect-ratio: 16/9) {
