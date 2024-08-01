@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./section3.component.css']
 })
 export class Section3Component {
-
+  item = 1;
 }

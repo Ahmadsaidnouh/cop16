@@ -2,42 +2,94 @@
     <div class="row about-container">
         <div class="col-3 ps-0">
             <div class="d-flex flex-column gap-3">
-                <div class="imgs-container small-imgs">
-                    <img src="assets/home/sec3/img4.png" alt="">
+                <div class="imgs-container position-relative small-imgs">
+                    <img [class.display-img]="item == 1" class="position-absolute" src="assets/home/sec3/img4.png" alt="">
+                    <img [class.display-img]="item == 2" class="position-absolute" src="assets/home/sec3/img1.png" alt="">
+                    <img [class.display-img]="item == 3" class="position-absolute" src="assets/home/sec3/img4.png" alt="">
                 </div>
-                <div class="imgs-container small-imgs">
-                    <img src="assets/home/sec3/img3.png" alt="">
+                <div class="imgs-container position-relative small-imgs">
+                    <img [class.display-img]="item == 1" class="position-absolute" src="assets/home/sec3/img3.png" alt="">
+                    <img [class.display-img]="item == 2" class="position-absolute" src="assets/home/sec3/img3.png" alt="">
+                    <img [class.display-img]="item == 3" class="position-absolute" src="assets/home/sec3/img1.png" alt="">
                 </div>
             </div>
         </div>
         <div class="col-3 pe -4">
-            <div class="imgs-container large-img">
-                <img src="assets/home/sec3/img1.png" alt="">
+            <div class="imgs-container position-relative large-img">
+                <img [class.display-img]="item == 1" class="position-absolute" src="assets/home/sec3/img1.png" alt="">
+                <img [class.display-img]="item == 2" class="position-absolute" src="assets/home/sec3/img2.png" alt="">
+                <img [class.display-img]="item == 3" class="position-absolute" src="assets/home/sec3/img3.png" alt="">
             </div>
         </div>
         <div class="col-6 ps-4 pe-0">
             <div class="text-container d-flex flex-column gap-3">
-                <h2>About COP 16</h2>
-                <h2 *ngIf="false">Legacy of cop 15</h2>
-                <h2 *ngIf="false">UNCCD convention</h2>
-                <p>UNCCD COP16 will unite leaders from governments, the private sector, civil society, and global
-                    stakeholders to accelerate progress in sustainable land management. We'll explore the vital
-                    connections between land and sustainability during high-level sessions, including a Heads of States
-                    Summit and interactive dialogues.</p>
-
-                <div class="radio-container d-flex align-items-center gap-2 pt-3">
-                    <label>
-                        <input type="radio" name="temp" id="radio1" checked>
-                        <div class="custom-radio"></div>
-                    </label>
-                    <label>
-                        <input type="radio" name="temp" id="radio2">
-                        <div class="custom-radio"></div>
-                    </label>
-                    <label>
-                        <input type="radio" name="temp" id="radio3">
-                        <div class="custom-radio"></div>
-                    </label>
+                <div class="headers position-relative">
+                    <h2 [class.display-header]="item == 1" class="position-absolute">About COP 16</h2>
+                    <h2 [class.display-header]="item == 2" class="position-absolute">Legacy of cop 15</h2>
+                    <h2 [class.display-header]="item == 3" class="position-absolute">UNCCD convention</h2>
+                </div>
+                <div class="descriptions position-relative">
+                    <span [class.display-desc]="item == 1" class="position-absolute">UNCCD COP16 will unite leaders from
+                        governments, the private sector,
+                        civil society, and global
+                        stakeholders to accelerate progress in sustainable land management. We'll explore the vital
+                        connections between land and sustainability during high-level sessions, including a Heads of
+                        States
+                        Summit and interactive dialogues.
+                        <div class="radio-container">
+                            <label (click)="item = 1">
+                                <input type="radio" name="temp1" [checked]="item == 1">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 2">
+                                <input type="radio" name="temp1" [checked]="item == 2">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 3">
+                                <input type="radio" name="temp1" [checked]="item == 3">
+                                <div class="custom-radio"></div>
+                            </label>
+                        </div>
+                    </span>
+                    <span [class.display-desc]="item == 2" class="position-absolute">UNCCD COP15 adopted 38 Decisions,
+                        including on tenure, migration and
+                        gender, that highlight the role of land sustainability in addressing multiple crises through a
+                        united global pledge to boost drought resilience and invest in land restoration for future
+                        prosperity.
+                        <div class="radio-container">
+                            <label (click)="item = 1">
+                                <input type="radio" name="temp2" [checked]="item == 1">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 2">
+                                <input type="radio" name="temp2" [checked]="item == 2">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 3">
+                                <input type="radio" name="temp2" [checked]="item == 3">
+                                <div class="custom-radio"></div>
+                            </label>
+                        </div>
+                    </span>
+                    <span [class.display-desc]="item == 3" class="position-absolute">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dicta voluptates! Cum, aliquam.
+                        Soluta facilis est vel voluptatibus doloribus illum quae, odit sapiente beatae. Error blanditiis
+                        iusto ullam illum fugit.
+                        <div class="radio-container">
+                            <label (click)="item = 1">
+                                <input type="radio" name="temp3" [checked]="item == 1">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 2">
+                                <input type="radio" name="temp3" [checked]="item == 2">
+                                <div class="custom-radio"></div>
+                            </label>
+                            <label (click)="item = 3">
+                                <input type="radio" name="temp3" [checked]="item == 3">
+                                <div class="custom-radio"></div>
+                            </label>
+                        </div>
+                    </span>
                 </div>
             </div>
         </div>
