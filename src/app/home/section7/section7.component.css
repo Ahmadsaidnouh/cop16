@@ -29,6 +29,7 @@ section {
 
 .map {
     padding-block: 150px;
+    margin-top: 70px;
 }
 
 .stat-item {
@@ -80,11 +81,8 @@ section {
     padding: 30px;
     display: flex;
     align-items: end;
-}
 
-.city-selected {
-    height: 460px;
-    width: 350px;
+    transition: all .2s;
 }
 
 .city span {
@@ -92,5 +90,36 @@ section {
     font-weight: 600;
     line-height: 32px;
     color: white;
+}
 
+.city.city1 {
+    height: 460px;
+    width: 350px;
+}
+.city.city2 {
+    transform: translateX(calc(350px * 1 + 20px));
+}
+.city.city3 {
+    transform: translateX(calc(350px * 2 + 20px));
+}
+.city.city4 {
+    transform: translateX(calc(350px * 3 + 20px));
+}
+.city.city5 {
+    transform: translateX(calc(350px * 4 + 20px));
+}
+.city.city6 {
+    transform: translateX(calc(350px * 5 + 20px));
+}
+.city.city7 {
+    transform: translateX(calc(350px * 6 + 20px));
+}
+
+.city-header .head {
+    opacity: 0;
+    transition: all .2s;
+}
+
+.city-header .head.display-header {
+    opacity: 1;
 }

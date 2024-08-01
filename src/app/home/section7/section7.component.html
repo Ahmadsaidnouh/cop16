@@ -1,34 +1,86 @@
 <h1 class="about-header main-padding-inline py-4 pb-5">About Saudi Arabia</h1>
 <section [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">
     <div class="main-padding-inline main-sec7">
-        <div class="city-header">
-            <h2 class="mb-2">Riyadh</h2>
-            <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud desert, on
-                the
-                eastern part of the Najd plateau</p>
+        <div class="city-header position-relative">
+            <div [class.display-header]="city == 'Riyadh'" class="position-absolute head">
+                <h2 class="mb-2">Riyadh</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Makkah'" class="position-absolute head">
+                <h2 class="mb-2">Makkah</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Madinah'" class="position-absolute head">
+                <h2 class="mb-2">Madinah</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Jeddah'" class="position-absolute head">
+                <h2 class="mb-2">Jeddah</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Al Khobar'" class="position-absolute head">
+                <h2 class="mb-2">Al Khobar</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Tabuk'" class="position-absolute head">
+                <h2 class="mb-2">Tabuk</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
+            <div [class.display-header]="city == 'Yanbu'" class="position-absolute head">
+                <h2 class="mb-2">Yanbu</h2>
+                <p>It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud
+                    desert, on
+                    the
+                    eastern part of the Najd plateau</p>
+            </div>
         </div>
         <div class="map position-relative">
             <img src="assets/home/sec7/riyadh-map.png" alt="">
             <div class="city-carousel d-flex align-items-center gap-4">
-                <div class="city city-selected"  [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">
+                <div (click)="rotate($event)" class="city city1 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">
                     <span>Riyadh</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/makkah.png'+')'">
+                <div (click)="rotate($event)" class="city city2 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/makkah.png'+')'">
                     <span>Makkah</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/madinah.png'+')'">
+                <div (click)="rotate($event)" class="city city3 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/madinah.png'+')'">
                     <span>Madinah</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/jeddah.png'+')'">
+                <div (click)="rotate($event)" class="city city4 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/jeddah.png'+')'">
                     <span>Jeddah</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/al-khobar.png'+')'">
+                <div (click)="rotate($event)" class="city city5 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/al-khobar.png'+')'">
                     <span>Al Khobar</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/tabuk.png'+')'">
+                <div (click)="rotate($event)" class="city city6 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/tabuk.png'+')'">
                     <span>Tabuk</span>
                 </div>
-                <div class="city"  [style.background-image]="'url('+'assets/home/sec7/yanbu.png'+')'">
+                <div (click)="rotate($event)" class="city city7 position-absolute"
+                    [style.background-image]="'url('+'assets/home/sec7/yanbu.png'+')'">
                     <span>Yanbu</span>
                 </div>
             </div>
