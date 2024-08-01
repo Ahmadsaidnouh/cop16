@@ -131,12 +131,14 @@
 }
 
 @media (min-aspect-ratio: 16/9) {
+/* @media (min-width: 1555px) { */
     .back-video {
         width: 100%;
         height: auto;
     }
 }
 @media (max-aspect-ratio: 16/9) {
+/* @media (max-width: 1555px) { */
     .back-video {
         width: auto;
         height: 100%;
