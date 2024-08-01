@@ -33,6 +33,25 @@ section {
     margin-top: 70px;
 }
 
+.map-imgs {
+    /* height: 450px; */
+    height: 320px;
+}
+
+.map-imgs img{
+    top: -65px;
+    transform: scale(0);
+    bottom: -160px;
+    left: 220px;
+    transition: all .2s;
+}
+
+.map-imgs img.display-img {
+    transform: scale(1);
+    bottom: auto;
+    left: auto;
+}
+
 .stat-item {
     max-width: 300px;
 }

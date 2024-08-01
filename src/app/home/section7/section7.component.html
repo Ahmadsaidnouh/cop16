@@ -53,7 +53,15 @@
             </div>
         </div>
         <div class="map position-relative">
-            <img src="assets/home/sec7/riyadh-map.png" alt="">
+            <div class="map-imgs position-relative">
+                <img [class.display-img]="city == 'Riyadh'" class="position-absolute" src="assets/home/sec7/riyadh-map.png" alt="">
+                <img [class.display-img]="city == 'Makkah'" class="position-absolute" src="assets/home/sec7/makkah-map.png" alt="">
+                <img [class.display-img]="city == 'Madinah'" class="position-absolute" src="assets/home/sec7/madinah-map.png" alt="">
+                <img [class.display-img]="city == 'Jeddah'" class="position-absolute" src="assets/home/sec7/jeddah-map.png" alt="">
+                <img [class.display-img]="city == 'Al Khobar'" class="position-absolute" src="assets/home/sec7/al-khobar-map.png" alt="">
+                <img [class.display-img]="city == 'Tabuk'" class="position-absolute" src="assets/home/sec7/tabuk-map.png" alt="">
+                <img [class.display-img]="city == 'Yanbu'" class="position-absolute" src="assets/home/sec7/yanbu-map.png" alt="">
+            </div>
             <div class="city-carousel d-flex align-items-center gap-4">
                 <div (click)="rotate($event)" class="city city1 position-absolute"
                     [style.background-image]="'url('+'assets/home/sec7/riyadh.png'+')'">

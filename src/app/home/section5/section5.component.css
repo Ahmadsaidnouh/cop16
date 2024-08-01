@@ -75,4 +75,5 @@
     color: #F79E26;
     cursor: pointer;
     border-bottom: 1px solid #F79E26;
+    white-space: nowrap;
 }
