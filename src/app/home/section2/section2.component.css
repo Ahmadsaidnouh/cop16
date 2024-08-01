@@ -1,5 +1,7 @@
 .main-sec2 {
     background-color: #BF874A;
+    height: 248px;
+    position: relative;
 }
 
 .motive-item {
@@ -15,6 +17,8 @@
     justify-content: center;
     align-items: center;
     transition: all .2s;
+
+    position: absolute;
 }
 
 .motive-item h1 {
@@ -31,28 +35,54 @@
     font-weight: 500;
     font-size: 16px;
 }
+/* .motive-item:not(:nth-child(3 of .motive-item)) {
+    cursor: pointer;
+    user-select: none;
+}
+.motive-item:nth-child(1) {
+    opacity: .4;
+    transform: scale(0.5) translateX(calc(-200% + -290px));
+}
+.motive-item:nth-child(2) {
+    opacity: .7;
+    transform: scale(0.8) translateX(calc(-100% + -50px));
+}
+.motive-item:nth-child(3) {
+    box-shadow: 0px 5px 20.3px 0px #FFFFFF80;
+}
+.motive-item:nth-child(4) {
+    opacity: .7;
+    transform: scale(0.8) translateX(calc(100% + 50px));
+}
+.motive-item:nth-child(5) {
+    opacity: .4;
+    transform: scale(0.5) translateX(calc(200% + 290px));
+} */
 .motive-item:not(.item3) {
     cursor: pointer;
     user-select: none;
 }
-.item1 {
-    opacity: .4;
-    transform: scale(0.5) translateX(90px);
+
+.motive-item.item1 {
+    opacity: 0.4;
+    transform: scale(0.5) translateX(calc(-200% + -290px));
 }
-.item2 {
-    opacity: .7;
-    transform: scale(0.8);
+
+.motive-item.item2 {
+    opacity: 0.7;
+    transform: scale(0.8) translateX(calc(-100% + -50px));
 }
-.item3 {
-    /* opacity: .5;
-    transform: scale(0.7); */
+
+.motive-item.item3 {
     box-shadow: 0px 5px 20.3px 0px #FFFFFF80;
 }
-.item4 {
-    opacity: .7;
-    transform: scale(0.8);
+
+.motive-item.item4 {
+    opacity: 0.7;
+    transform: scale(0.8) translateX(calc(100% + 50px));
 }
-.item5 {
-    opacity: .4;
-    transform: scale(0.5) translateX(-90px);
+
+.motive-item.item5 {
+    opacity: 0.4;
+    transform: scale(0.5) translateX(calc(200% + 290px));
 }
